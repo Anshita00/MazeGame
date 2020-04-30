@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@DesignMode.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="treasureCC" layoutX="226.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleTreasure" text="Collect treasure" textFill="#ffe436" />
+      <RadioButton fx:id="exitCC" layoutX="226.0" layoutY="210.0" mnemonicParsing="false" onAction="#handleExit" text="Reach the exit" textFill="#f8f365" />
+      <RadioButton fx:id="boulderCC" layoutX="226.0" layoutY="150.0" mnemonicParsing="false" onAction="#handleBoulder" text="Place boulder on switches" textFill="#eae437" />
+      <Button fx:id="finish" layoutX="228.0" layoutY="297.0" mnemonicParsing="false" onAction="#handleFinish" text="Start Designing!" />
+      <RadioButton fx:id="killEnemiesCC" layoutX="226.0" layoutY="120.0" mnemonicParsing="false" onAction="#handleKillEnemies" text="Kill all enemies" textFill="#ffdf3d">
+         <toggleGroup>
+            <ToggleGroup fx:id="killEnemies" />
+         </toggleGroup></RadioButton>
+      <TextField fx:id="mapName" layoutX="203.0" layoutY="251.0" />
+      <Label layoutX="89.0" layoutY="256.0" text="Enter Map Name:" textFill="#f9ff44" />
+      <TextField fx:id="map" layoutX="217.0" layoutY="251.0" />
+   </children>
+</AnchorPane>
